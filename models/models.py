@@ -15,7 +15,7 @@ class AccountMove(models.Model):
                     products.append(line.product_id.id)
                     new_lines.append([0, 0, {
                         'product_id': line.product_id.id,
-                        'analytic_account_id': line.analytic_account_id.id,
+                        # 'analytic_account_id': line.analytic_account_id.id,
                         'name': line.name,
                         'quantity': line.quantity,
                         'product_uom_id': line.product_uom_id.id,
